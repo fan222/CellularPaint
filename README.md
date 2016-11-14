@@ -7,10 +7,10 @@ Conway's Game of Life is an example of the concept of cellular automata. Each ce
 
 ## MVP
 
--[ ] State, pause and reset the game.
--[ ] User can paint the cells while the game is running.
--[ ] User can chose the size and color of their paint.
--[ ] Select squares to be alive at the beginning
+- [ ] State, pause and reset the game.
+- [ ] User can paint the cells while the game is running.
+- [ ] User can chose the size and color of their paint.
+- [ ] Select squares to be alive at the beginning
 
 
 ## Wireframes
@@ -29,7 +29,7 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 
 ## Implementation Timeline
 
-Day 1. Setup all necessary Node modules
-Day 2. Finish board and cell class.
-Day 3. Finish user's paint class.
-Day 4. Polish style and color.
+**Day 1**. Setup all necessary Node modules
+**Day 2**. Finish board and cell class.
+**Day 3**. Finish user's paint class.
+**Day 4**. Polish style and color.
