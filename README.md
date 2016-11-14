@@ -18,7 +18,7 @@ Conway's Game of Life is an example of the concept of cellular automata. Each ce
 This app will have a game board, game controls and links to my LinkedIn and Github on the screen.
 
 ![cellularpaint] [wareframe]
-[wareframe]: ./cellularpaint.png
+[wareframe]: ./docs/cellularpaint.png
 
 ## Architecture and Technologies
 
@@ -29,7 +29,10 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 
 ## Implementation Timeline
 
-**Day 1**. Setup all necessary Node modules
+**Day 1**. Setup all necessary Node modules.
+
 **Day 2**. Finish board and cell class.
+
 **Day 3**. Finish user's paint class.
+
 **Day 4**. Polish style and color.
