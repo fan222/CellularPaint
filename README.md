@@ -25,14 +25,21 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
   - This app will use Vanilla JavaScript and jquery for overall logic and structure.
   - Webpack to bundle and serve up the various scripts.
 
-  In additon to the webpack entry file, there will alse be board.js, automata.js, cell.js and paint.js files
+  * In additon to the webpack entry file, there will alse be board.js, view.js, cell.js, options.js and paint.js files
+  * The update logic of cells lives in cell.js. And a Board object will be passed to cell object.
+  * paint.js has the function that responds to mouse hover and repaint cell.
+  * board has a function to loop over all cell and call cell update function. And another function to draw the board with canvas.
+  * view.js integrate all the information and render the board to html.
 
 ## Implementation Timeline
 
 **Day 1**. Setup all necessary Node modules.
 
 **Day 2**. Finish board and cell class.
+Board setup, update and draw functions. Cell update logic.
 
 **Day 3**. Finish user's paint class.
+In paint.js, finish mouse hover logic and integrate paint with board and cell.
 
 **Day 4**. Polish style and color.
+Style the interface and provide adequate instructions
