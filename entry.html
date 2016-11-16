@@ -20,16 +20,17 @@
             <button type="button" class="stop-button" id="stop-button">Stop</button>
             <button type="button" class="step-button" id="step-button">Step</button>
             <button type="button" class="reset-button" id="reset-button">Reset</button>
-            <button type="button" class="all-red" id="all-red">All Red</button>
-            <button type="button" class="all-blue" id="all-blue">All Blue</button>
-            <button type="button" class="all-green" id="all-green">All Green</button>
-            <button type="button" class="all-yellow" id="all-yellow">All Yellow</button>
+            <button type="button" class="paint-red" id="paint-red">Paint Red</button>
+            <button type="button" class="paint-blue" id="paint-blue">Paint Blue</button>
+            <button type="button" class="paint-green" id="paint-green">Paint Green</button>
+            <button type="button" class="paint-yellow" id="paint-yellow">Paint Yellow</button>
           </div>
-          <ul class="input-range-row">
-            <li class="generation-counter">
-              Current Generation: <div class="counter">0</div>
-            </li>
-          </ul>
+          <div class="generation-counter">
+            Current Generation: <div class="counter">0</div>
+          </div>
+          <div class="paint-color">
+            Current Paint Color: <div class="color">Red</div>
+          </div>
         </div>
       </div>
     </div>
@@ -42,9 +43,9 @@
         canvasEl.width = CellularPaint.View.CANVAS_DIM_X;
         canvasEl.height = CellularPaint.View.CANVAS_DIM_Y;
         var ctx = canvasEl.getContext("2d");
-        var ant = new CellularPaint.Board({numX: 100, numY: 60});
-        new CellularPaint.Menu({board: ant});
-        new CellularPaint.View(ant);
+        var board = new CellularPaint.Board({numX: 100, numY: 60});
+        new CellularPaint.Menu({board: board});
+        new CellularPaint.View(board);
       })
     </script>
   </body>
