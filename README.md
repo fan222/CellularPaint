@@ -2,15 +2,16 @@
 
 ## Background
 
-Conway's Game of Life is an example of the concept of cellular automata. Each cell on a gird is either dead or alive when the game begins. The state of that cell in next step depends on the state of all its neighborhood.
+Cyclic Cellular Automata (CCA) exhibit complex self-organization by iteration of an extremely simple update rule. A specified number of Colors are arranged cyclically in a "color wheel." Each color can only advance to the next, the last cycling to 0. Each update a cell's color advances by 1 if there are at least Threshold cells of the next color within its neighbor set of size Range in extended Moore or von Neumann neighborhood. These simple dynamics exhibit complex self-organization starting from randomness.
+
 
 
 ## MVP
 
 - [ ] State, pause and reset the game.
+- [ ] User can choose the type of Cyclic Cellular Automata.
 - [ ] User can paint the cells while the game is running.
-- [ ] User can chose the size and color of their paint.
-- [ ] Select squares to be alive at the beginning
+- [ ] User can chose the size and color of their paint brush.
 
 
 ## Wireframes
@@ -23,23 +24,22 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 ## Architecture and Technologies
 
   - This app will use Vanilla JavaScript and jquery for overall logic and structure.
-  - Webpack to bundle and serve up the various scripts.
 
-  * In additon to the webpack entry file, there will alse be board.js, view.js, cell.js, options.js and paint.js files
-  * The update logic of cells lives in cell.js. And a Board object will be passed to cell object.
-  * paint.js has the function that responds to mouse hover and repaint cell.
-  * board has a function to loop over all cell and call cell update function. And another function to draw the board with canvas.
+  * There will be board.js, view.js, options.js and index.html files
+  * The update logic of cells lives in board.js.
+  * Board has a function to loop over all cell and update cells. And another function to draw the board with canvas.
+  * view.js has the function that responds to mouse hover and repaint cell.
   * view.js integrate all the information and render the board to html.
+  * options.js responds to user input on controls buttons and then update parameters.
 
 ## Implementation Timeline
 
-**Day 1**. Setup all necessary Node modules.
+**Day 1**.
 
-**Day 2**. Finish board and cell class.
-Board setup, update and draw functions. Cell update logic.
+**Day 2**.
 
-**Day 3**. Finish user's paint class.
-In paint.js, finish mouse hover logic and integrate paint with board and cell.
+**Day 3**.
 
-**Day 4**. Polish style and color.
-Style the interface and provide adequate instructions
+**Day 4**.
+
+## Features

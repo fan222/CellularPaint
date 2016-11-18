@@ -115,3 +115,20 @@ h1 {
 .author {
   margin-top: 10px;
 }
+
+img {
+  width: 43px;
+  height: 43px;
+}
+
+.github {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+}
+
+.linkedin {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
