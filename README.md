@@ -41,4 +41,18 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 
 **Day 4**.
 
-## Features
+## Examples
+
+  The game board starts with all random colors.
+  ![cellular0] [phase-0]
+  After several rounds of update, regular pattern appears.
+  ![cellular1] [phase-1]
+  User can paint the board with different colors.
+  ![cellular2] [phase-2]
+  After a while, the cells 'heal' themselves. Similar pattern appears again.
+  ![cellular3] [phase-3]
+
+  [phase-0]: ./docs/phase-0.png
+  [phase-1]: ./docs/phase-1.png
+  [phase-2]: ./docs/phase-2.png
+  [phase-3]: ./docs/phase-3.png
