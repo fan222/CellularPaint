@@ -33,22 +33,22 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 ## Implementation Timeline
 
 **Day 1**. Research the background of CCA and usage of canvas
-⋅⋅* Study the background of Cyclic Cellular Automata. The update rules of certain CCA type, such as 'Imperfect', 'Fossil Debris', 'Perfect'.
-⋅⋅* Learn how to draw squares and lines with canvas.
+* Study the background of Cyclic Cellular Automata. The update rules of certain CCA type, such as 'Imperfect', 'Fossil Debris', 'Perfect'.
+* Learn how to draw squares and lines with canvas.
 
 
 **Day 2**. Update logic of CCA and control buttons
-⋅⋅* Implement the update logic of CCA.
-⋅⋅* Add start, stop, step, reset, paint color and size, CCA type control buttons. Add event listener to view.js.
+* Implement the update logic of CCA.
+* Add start, stop, step, reset, paint color and size, CCA type control buttons. Add event listener to view.js.
 
 
 **Day 3**. Canvas draw
-⋅⋅* Interage view.js with board.js. Update game board with calling board draw function.
+* Interage view.js with board.js. Update game board with calling board draw function.
 
 
 **Day 4**. Style and README
-⋅⋅* Choose appropriate color for cells
-⋅⋅* Write and polish README, add Example.
+* Choose appropriate color for cells
+* Write and polish README, add Example.
 
 ## Example
 
