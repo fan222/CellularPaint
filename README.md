@@ -19,7 +19,6 @@ Cyclic Cellular Automata (CCA) exhibit complex self-organization by iteration of
 This app will have a game board, game controls and links to my LinkedIn and Github on the screen.
 
 ![cellularpaint] [wareframe]
-[wareframe]: ./docs/cellularpaint.png
 
 ## Architecture and Technologies
 
@@ -33,32 +32,38 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 
 ## Implementation Timeline
 
-**Day 1**.
+**Day 1**. Research the background of CCA and usage of canvas
+⋅⋅* Study the background of Cyclic Cellular Automata. The update rules of certain CCA type, such as 'Imperfect', 'Fossil Debris', 'Perfect'.
+⋅⋅* Learn how to draw squares and lines with canvas.
+**Day 2**. Update logic of CCA and control buttons
+⋅⋅* Implement the update logic of CCA.
+⋅⋅* Add start, stop, step, reset, paint color and size, CCA type control buttons. Add event listener to view.js.
+**Day 3**. Canvas draw
+⋅⋅* Interage view.js with board.js. Update game board with calling board draw function.
+**Day 4**. Style and README
+⋅⋅* Choose appropriate color for cells
+⋅⋅* Write and polish README, add Example.
 
-**Day 2**.
+## Example
 
-**Day 3**.
-
-**Day 4**.
-
-## Examples
-
-  The game board starts with all random colors.
+  **Phase-0:** the game board starts with all random colors.
 
   ![cellular0] [phase-0]
 
-  After several rounds of update, regular pattern appears.
+  **Phase-1:** after several rounds of update, regular pattern appears.
 
   ![cellular1] [phase-1]
 
-  User can paint the board with different colors.
+  **Phase-2:** user can paint the board with different colors.
 
   ![cellular2] [phase-2]
 
-  After a while, the cells 'heal' themselves. Similar pattern appears again.
+  **Phase-3:** after a while, the cells 'heal' themselves. Similar pattern appears again.
 
   ![cellular3] [phase-3]
 
+
+  [wareframe]: ./docs/cellularpaint.png
   [phase-0]: ./docs/phase-0.png
   [phase-1]: ./docs/phase-1.png
   [phase-2]: ./docs/phase-2.png
