@@ -12,9 +12,9 @@
     <script src="./lib/board.js"></script>
     <script src="./lib/view.js"></script>
     <script src="./lib/options.js"></script>
-
+    <h1>Cellular Paint</h1>
     <div class="options-container">
-      <div class="clearfix">
+      <div class="buttons">
         <div class="button-row">
           <button type="button" class="button start-button">Start</button>
           <button type="button" class="button stop-button">Stop</button>
@@ -28,21 +28,29 @@
           <button type="button" class="button paint-yellow">Paint Yellow</button>
         </div>
       </div>
-      <div class="clearfix">
+      <div class="clearfix options">
         <label for="paint-size" class="size">Size of Painting brush: 1</label><input class="paint-size" type="range" value="1" min="1" max="3"/>
-        <div class="paint-color">Current Paint Color:<div class="color">Red</div></div>
+        <div class="paint-color">Current Paint Color: Red</div>
         <div class="type">Select Type:</div>
         <select class="change-type">
           <option value="1,2">Imperfect</option>
           <option value="2,9">Fossil Debris</option>
           <option value="1,3">Perfect</option>
         </select>
-        <div class="generation-counter">Current Generation: <div class="counter">0</div></div>
+        <div class="counter">Current Generation: 0</div>
       </div>
     </div>
 
 
-    <canvas id="canvasEl"></canvas>
+    <canvas id="canvasEl" class="canvasEl"></canvas>
+
+    <div class="instructions">
+      <h3>Background</h3>
+      <p><strong>Cyclic Cellular Automata (CCA)</strong> exhibit complex self-organization by iteration of an extremely simple update rule. A specified number of Colors are arranged cyclically in a "color wheel." Each color can only advance to the next, the last cycling to 0. Each update a cell's color advances by 1 if there are at least Threshold cells of the next color within its neighbour set of size Range in extended Moore or von Neumann neighbourhood. These simple dynamics exhibit complex self-organization starting from randomness.</p>
+      <h3>Instructions</h3>
+      <p>The purpose of this app is to show CCA has the ability of self-healing. User can choose the size and color of the paint brush and then dye the canvas. The self-organized pattern is ruined. But after a while, those cells will 'heal' themselives. The beautiful pattern will show again.</p>
+      <div class="author">by: <a target="_blank" href="https://github.com/fan222">Fan Song</a></div>
+    </div>
     <script>
       $(document).ready(function() {
         var canvasEl = document.getElementById("canvasEl");
