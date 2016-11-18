@@ -23,8 +23,7 @@ This app will have a game board, game controls and links to my LinkedIn and Gith
 
 ## Architecture and Technologies
 
-  - This app will use Vanilla JavaScript and jquery for overall logic and structure.
-
+  * This app will use Vanilla JavaScript and jquery for overall logic and structure.
   * There will be board.js, view.js, options.js and index.html files
   * The update logic of cells lives in board.js.
   * Board has a function to loop over all cell and update cells. And another function to draw the board with canvas.
