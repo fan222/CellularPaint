@@ -1,6 +1,6 @@
 # CellularPaint
 [live][live-site]
-[live-site]:  https://fan222.github.io/CellularPaint/
+[live-site]:  https://fan222.github.io/CellularPaint/.
 
 ## Background
 
