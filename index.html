@@ -21,23 +21,13 @@
     </div>
     <h1>Cellular Paint</h1>
     <div class="options-container">
-      <div class="buttons">
+      <div class="control">
         <div class="button-row">
           <button type="button" class="button start-button">Start</button>
           <button type="button" class="button stop-button">Stop</button>
           <button type="button" class="button step-button">Step</button>
           <button type="button" class="button reset-button">Reset</button>
         </div>
-        <div class="paint-options">
-          <button type="button" class="button paint-red">Paint Red</button>
-          <button type="button" class="button paint-blue">Paint Blue</button>
-          <button type="button" class="button paint-green">Paint Green</button>
-          <button type="button" class="button paint-yellow">Paint Yellow</button>
-        </div>
-      </div>
-      <div class="clearfix options">
-        <label for="paint-size" class="size">Size of Painting brush: 1</label><input class="paint-size" type="range" value="1" min="1" max="3"/>
-        <div class="paint-color">Current Paint Color: Red</div>
         <div class="type">Select Type:</div>
         <select class="change-type">
           <option value="1,2">Imperfect</option>
@@ -45,6 +35,16 @@
           <option value="1,3">Perfect</option>
         </select>
         <div class="counter">Current Generation: 0</div>
+      </div>
+      <div class="paint">
+        <div class="paint-options">
+          <button type="button" class="button paint-red"><img class="brush" src="https://res.cloudinary.com/cloudfan/image/upload/v1480444152/red_jsk0gs.png" alt="red"></img></button>
+          <button type="button" class="button paint-blue"><img class="brush" src="https://res.cloudinary.com/cloudfan/image/upload/v1480444152/blue_x6jbbk.png" alt="blue"></img></button>
+          <button type="button" class="button paint-green"><img class="brush" src="https://res.cloudinary.com/cloudfan/image/upload/v1480444152/green_ceyx8k.png" alt="green"></img></button>
+          <button type="button" class="button paint-yellow"><img class="brush" src="https://res.cloudinary.com/cloudfan/image/upload/v1480444152/yellow_rcsv2k.png" alt="yellow"></img></button>
+        </div>
+        <label for="paint-size" class="size">Size of Painting brush: 1</label><input class="paint-size" type="range" value="1" min="1" max="3"/>
+        <div class="paint-color">Current Paint Color: Red</div>
       </div>
     </div>
 
@@ -58,13 +58,14 @@
       <p>The purpose of this app is to show CCA has the ability of self-healing. User can choose the size and color of the paint brush and then dye the canvas. The self-organized pattern is ruined. But after a while, those cells will 'heal' themselives. The beautiful pattern will show again.</p>
       <div class="author">by: <a target="_blank" href="https://github.com/fan222">Fan Song</a></div>
     </div>
+    <div class="icons">Brush icons made by <a href="http://www.flaticon.com/authors/tutsplus" title="TutsPlus">TutsPlus</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <script>
       $(document).ready(function() {
         var canvasEl = document.getElementById("canvasEl");
         canvasEl.width = CellularPaint.View.CANVAS_DIM_X;
         canvasEl.height = CellularPaint.View.CANVAS_DIM_Y;
         var ctx = canvasEl.getContext("2d");
-        var board = new CellularPaint.Board({numX: 100, numY: 60});
+        var board = new CellularPaint.Board({numX: 110, numY: 50});
         new CellularPaint.Menu({board: board});
         new CellularPaint.View(board);
       })
