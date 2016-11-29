@@ -95,11 +95,6 @@ h1 {
   margin: 20px 0;
 }
 
-.instructions {
-  width: 1000px;
-  margin-bottom: 50px;
-}
-
 .p {
   display: block;
   -webkit-margin-before: 1em;
@@ -149,4 +144,30 @@ h1 {
   justify-content: center;
   display: flex;
   align-items: center
+}
+
+.instructions {
+  position: fixed;
+  visibility: hidden;
+  z-index: 3;
+  width: 600px;
+  padding: 10px 50px 50px 50px;
+  top: 175px;
+}
+
+#show {
+  color: white;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(17, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.hide {
+  float: left;
+}
+
+.icons {
+  margin: 43px 0 0 0;
+  font-size: 12px;
 }

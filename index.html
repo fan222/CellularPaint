@@ -27,6 +27,7 @@
           <button type="button" class="button stop-button">Stop</button>
           <button type="button" class="button step-button">Step</button>
           <button type="button" class="button reset-button">Reset</button>
+          <button type="button" class="button instructions-button">Instructions</button>
         </div>
         <div class="type">Select Type:</div>
         <select class="change-type">
@@ -52,11 +53,11 @@
     <canvas id="canvasEl" class="canvasEl"></canvas>
 
     <div class="instructions">
+      <div class="hide">Hide</div>
       <h3>Background</h3>
       <p><strong>Cyclic Cellular Automata (CCA)</strong> exhibit complex self-organization by iteration of an extremely simple update rule. A specified number of Colors are arranged cyclically in a "color wheel." Each color can only advance to the next, the last cycling to 0. Each update a cell's color advances by 1 if there are at least Threshold cells of the next color within its neighbour set of size Range in extended Moore or von Neumann neighbourhood. These simple dynamics exhibit complex self-organization starting from randomness.</p>
       <h3>Instructions</h3>
       <p>The purpose of this app is to show CCA has the ability of self-healing. User can choose the size and color of the paint brush and then dye the canvas. The self-organized pattern is ruined. But after a while, those cells will 'heal' themselives. The beautiful pattern will show again.</p>
-      <div class="author">by: <a target="_blank" href="https://github.com/fan222">Fan Song</a></div>
     </div>
     <div class="icons">Brush icons made by <a href="http://www.flaticon.com/authors/tutsplus" title="TutsPlus">TutsPlus</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <script>
