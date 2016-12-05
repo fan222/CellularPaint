@@ -3,7 +3,7 @@
 [live-site]:  https://fan222.github.io/CellularPaint/.
 
 ![gif] [paint]
-[paint] :/docs/paint.gif
+[paint]: ./docs/paint.gif
 
 
 
