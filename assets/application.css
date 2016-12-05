@@ -167,6 +167,10 @@ h1 {
   float: left;
 }
 
+.hide:hover {
+  cursor: pointer;
+}
+
 .icons {
   margin: 43px 0 0 0;
   font-size: 12px;
