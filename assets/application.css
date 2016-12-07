@@ -153,6 +153,8 @@ h1 {
   width: 600px;
   padding: 10px 50px 50px 50px;
   top: 175px;
+  margin-left: -350px;
+  left: 50%;
 }
 
 #show {
